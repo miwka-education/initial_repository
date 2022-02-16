@@ -1,4 +1,4 @@
 
 
 def function():
-    print(1)
+    return 1
