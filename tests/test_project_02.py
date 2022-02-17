@@ -12,7 +12,7 @@ imported = getattr(__import__(package1, fromlist=[name]), name)
 
 #imported = __import__(name1)
 
-from imported import function
+#from imported import function
 
 class TestStringMethods(unittest.TestCase):
 
