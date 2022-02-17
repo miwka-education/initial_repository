@@ -4,7 +4,7 @@ import os
 
 
 package = os.getenv('GITHUB_ACTOR')
-name = f"function"
+name = "function"
 
 package1 = f"{package}.project_02.modules.module"
 
@@ -17,5 +17,5 @@ imported = getattr(__import__(package1, fromlist=[name]), name)
 class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
-        value = function()
+        value = imported.function()
         self.assertEqual(value, 1)
