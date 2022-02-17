@@ -2,7 +2,7 @@ import unittest
 import os
 
 package = os.getenv('GITHUB_ACTOR')
-name = "modules.module"
+name = "project_02.modules.module"
 
 
 imported = getattr(__import__(package, fromlist=[name]), name)
