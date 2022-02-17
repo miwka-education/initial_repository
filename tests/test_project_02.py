@@ -1,14 +1,16 @@
 import unittest
 import os
+# https://stackoverflow.com/questions/6677424/how-do-i-import-variable-packages-in-python-like-using-variable-variables-i
+
 
 package = os.getenv('GITHUB_ACTOR')
-name = "project_02.modules.module"
+name = f"function"
 
 
-#imported = getattr(__import__(package, fromlist=[name]), name)
+imported = getattr(__import__(package, fromlist=[name]), name)
 
 name1 = f"{package}.project_02.modules.module"
-imported = __import__(name1)
+#imported = __import__(name1)
 
 from imported import function
 
