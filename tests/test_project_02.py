@@ -6,10 +6,10 @@ import os
 package = os.getenv('GITHUB_ACTOR')
 name = f"function"
 
+package1 = f"{package}.project_02.modules.module"
 
-imported = getattr(__import__(package, fromlist=[name]), name)
+imported = getattr(__import__(package1, fromlist=[name]), name)
 
-name1 = f"{package}.project_02.modules.module"
 #imported = __import__(name1)
 
 from imported import function
