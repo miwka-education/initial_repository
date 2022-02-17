@@ -17,5 +17,5 @@ imported = getattr(__import__(package1, fromlist=[name]), name)
 class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
-        value = imported.function()
+        value = imported()
         self.assertEqual(value, 1)
